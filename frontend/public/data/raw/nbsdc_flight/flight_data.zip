@@ -1,0 +1,1448 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<title>国家基础学科公共科学数据中心</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta charset="utf-8">
+	<meta name="renderer" content="webkit">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<meta name="applicable-device" content="pc,mobile">
+	<meta http-equiv="Cache-Control" content="no-transform " />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<link rel="icon" href="https://www.nbsdc.cn/cfsnew/logo/weblogo.png" type="image/x-icon">
+	<link rel="shortcut icon" href="https://www.nbsdc.cn/cfsnew/logo/weblogo.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="https://www.nbsdc.cn/cfsnew/css/common.css" />
+	<link rel="stylesheet" type="text/css" href="https://www.nbsdc.cn/cfsnew/css/index.css" />
+	<link rel="stylesheet" type="text/css" href="https://www.nbsdc.cn/cfsnew/css/swiper.css">
+	<script type="text/javascript" src="/basic/jquery.js"></script>
+	<script type="text/javascript" src="/basic/common.js"></script>
+	<script type="text/javascript" src="/basic/common/common.js"></script>
+	<script type="text/javascript" src="/basic/swiper.min.js"></script>
+</head>
+<style>
+	.imore a {
+		width: 100px;
+		height: 30px;
+		line-height: 30px;
+	}
+	.imore a {
+		display: block;
+		margin: 0 auto;
+		width: 118px;
+		height: 36px;
+		line-height: 36px;
+		border: 1px #eaeaea solid;
+		background: #fff;
+		color: #666666;
+		text-align: center;
+	}
+	.linon{
+		display:none;
+	}
+	.ilist3 .item .time {
+		height: 25px;
+		line-height: 25px;
+		overflow: hidden;
+	}
+	#float {
+		position: absolute;
+		z-index: 1;
+	}
+
+	#floatImg {
+		width: 250px;
+		height: 148px;
+	}
+
+	#closeImg {
+		width: 18px;
+		height: 18px;
+	}
+</style>
+<body>
+<!--头部开始-->
+<div class="header">
+    <div class="topbox">
+        <div class="logo">
+            <a href="https://escience.org.cn/" target="_blank" style="margin-left:-30px">
+                <img src="https://www.nbsdc.cn/cfsnew/img/logo2.png">
+            </a>
+            <a href="https://www.casdc.cn/" target="_blank" style="margin-left:-5px">
+                <img src="https://www.nbsdc.cn/cfsnew/img/logo3-3.png">
+            </a>
+            <a href="/">
+<!--                <img id="headerLogo" src="https://www.nbsdc.cn/cfsnew/img/logo1-2.png"  style="margin-left: -5px">-->
+                <img id="headerLogo" src="https://www.nbsdc.cn/cfsnew/img/logo1-2.png" style="margin-left: -5px;">
+<!--                <img id="headerLogo" src="https://www.nbsdc.cn/cfsnew/img/logo3-blue.png" style="margin-left: -5px;">-->
+
+            </a>
+        </div>
+        <div id="topnav" class="topnav">
+            <ul>
+<!--                智能体入口-->
+                <li><a href="/general/agent">智能助手</a></li>
+                <li><a href="/">首页</a></li>
+                <li><a href="#">资源发现</a>
+                    <div class="m">
+                        <p>
+                            <a href="/general/dataSetHome">数据集</a>
+                            <a href="/general/newQualityProductiveForce">新质生产力图谱</a>
+                            <a href="/general/dataSetHome?tpe=3">软件</a>
+                            <a href="/general/dataSetHome?tpe=4">报告</a>
+                            <a href="/general/dataSetHome?tpe=5">论文</a>
+                            <a href="/general/dataSetHome?tpe=6">著作</a>
+                            <a href="/general/dataSetHome?tpe=7">专利</a>
+                            <a href="/general/dataSetHome?tpe=8">标准</a>
+                            <a href="https://findata.cn/?source=NBSDC">开放数据</a>
+                        </p>
+                    </div>
+                </li>
+                <li><a href="#">数据汇交</a>
+                    <div class="m">
+                        <p>
+                            <a href="/archive">项目数据汇交</a>
+                            <a href="https://www.scidb.cn/c/nbsdc" target="_blank">论文数据汇交</a>
+                        </p>
+                    </div>
+                </li>
+                <li><a href="https://darxiv.nbsdc.cn/" target="_blank">预印本发布</a>
+<!--                    <div class="m">-->
+<!--                        <p>-->
+<!--                            <a href="https://www.nbsdc.cn/">数据集出版</a>-->
+<!--                            <a href="http://www.csdata.org/" target="_blank">数据论文出版</a>-->
+<!--                        </p>-->
+<!--                    </div>-->
+                </li>
+                <li><a href="#">技术服务</a>
+                    <div class="m">
+                        <p>
+                            <a href="/general/openAPI">开放接口</a>
+
+                            <!--                            管理工具先隐藏掉，因为这10工具暂时个无法提供服务-->
+<!--                            <a href="/general/generalTools">管理工具</a>-->
+                            <a href="/general/identityServices">数据标识</a>
+                            <a href="/general/dataCrossover">数据融合</a>
+                            <a href="/general/eduCenter">技术培训</a>
+                        </p>
+                    </div>
+                </li>
+                <li><a href="#">服务成效</a>
+                    <div class="m">
+                        <p>
+                            <a href="/general/effectOverview">成效总览</a>
+                            <a href="/general/annualReport">公开年报</a>
+                            <a href="/general/cases">服务案例</a>
+                            <a href="/general/braceProject">支撑项目</a>
+                            <!--专题服务?????-->
+                            <a href="/general/independent">专题服务</a>
+                            <a href="/general/sharingCup">共享杯</a>
+<!--                            <a href="/general/overview">数据服务统计</a>-->
+<!--                            <a href="/general/testIndex">测试网页</a>-->
+                        </p>
+                    </div>
+                </li>
+                <li><a href="#">关于我们</a>
+                    <div class="m">
+                        <p>
+                            <a href="/general/aboutCenterEn">About Us</a>
+                            <a href="/general/aboutCenter">中心简介</a>
+                            <a href="/general/aboutPlatform">关于依托单位</a>
+                            <a href="/general/standard">标准规范</a>
+                            <a href="/general/exchange">合作交流</a>
+                            <a href="/general/safe">数据安全</a>
+                            <a href="/general/commonProblem">常见问题</a>
+                            <a href="/general/contactUs">联系我们</a>
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!--手机端菜单-->
+        <div id="topnav_m" class="topnav_m">
+            <ul>
+                <li><a href="/">首页</a></li>
+                <li><a href="#">资源发现</a>
+                    <div class="m">
+                        <p>
+                            <a href="/general/dataSetHome">数据集</a>
+                            <a href="/general/newQualityProductiveForce">新质生产力图谱</a>
+                            <a href="/general/dataSetHome?tpe=5">论文</a>
+                            <a href="/general/dataSetHome?tpe=4">报告</a>
+                            <a href="/general/dataSetHome?tpe=6">专著</a>
+                            <a href="/general/dataSetHome?tpe=7">软件</a>
+                            <a href="/general/dataSetHome?tpe=8">标准</a>
+                            <a href="https://findata.cn/?source=NBSDC">开放数据</a>
+                        </p>
+                    </div>
+                </li>
+                <li><a href="#">数据汇交</a>
+                    <div class="m">
+                        <p>
+                            <a href="/archive">项目数据汇交</a>
+                            <a href="https://www.scidb.cn/c/nbsdc" target="_blank">论文数据汇交</a>
+                        </p>
+                    </div>
+                </li>
+                <li><a href="https://darxiv.nbsdc.cn/" target="_blank">预印本发布</a>
+<!--                    <div class="m">-->
+<!--                        <p>-->
+<!--                            <a href="数据集出版">数据集出版</a>-->
+<!--                            <a href="http://www.csdata.cn/" target="_blank">数据论文出版</a>-->
+<!--                        </p>-->
+<!--                    </div>-->
+                </li>
+                <li><a href="#">技术服务</a>
+                    <div class="m">
+                        <p>
+<!--                            管理工具先隐藏掉，因为这10工具暂时个无法提供服务-->
+<!--                            <a href="/general/generalTools">管理工具</a>-->
+                            <a href="/general/identityServices">数据标识</a>
+                            <a href="/general/dataCrossover">数据交叉融合应用</a>
+                            <a href="http://www.casdc.cn/member/eduTrainInfo?id=5f80281cc016c7eb9d246890">技术培训</a>
+                        </p>
+                    </div>
+                </li>
+                <li><a href="#">服务成效</a>
+                    <div class="m">
+                        <p>
+                            <a href="/general/effectOverview">成效总览</a>
+                            <a href="/general/annualReport">公开年报</a>
+                            <a href="/general/cases">服务案例</a>
+                            <a href="/general/braceProject">支撑项目</a>
+                            <!--专题服务?????-->
+                            <a href="/general/independent">专题服务</a>
+                            <a href="/general/sharingCup">共享杯</a>
+                        </p>
+                    </div>
+                </li>
+                <li><a href="/general/openAPI">开放接口</a></li>
+                <li><a href="#">关于我们</a>
+                    <div class="m">
+                        <p>
+                            <a href="/general/aboutCenterEn">About Us</a>
+                            <a href="/general/aboutPlatform">关于依托单位</a>
+                            <a href="/general/aboutCenter">中心简介</a>
+                            <a href="/general/standard">标准规范</a>
+                            <a href="/general/exchange">合作交流</a>
+                            <a href="/general/safe">数据安全</a>
+                            <a href="/general/commonProblem">常见问题</a>
+                            <a href="/general/contactUs">联系我们</a>
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="nav_btn"><i></i></div>
+        <div id="newloginNav" class="toptool">
+            <a href="javaScript:loginUp()" class="msg">登录</a>
+        </div>
+    </div>
+</div>
+
+<div class="mainer">
+	<div class="imain1">
+		<div class="mainbox">
+			<!--顶部搜索-->
+			<div class="index_search">
+				<div class="search_select">
+					<div class="t">全部</div>
+					<div class="m" style="width:168px;height:200px;">
+						<ul>
+							<li data-value="0" onclick="qdType('0')">全部</li>
+							<li data-value="1" onclick="qdType('1')">数据集</li>
+							<li data-value="3" onclick="qdType('3')">报告</li>
+							<li data-value="4" onclick="qdType('4')">论文</li>
+							<li data-value="5" onclick="qdType('5')">专著</li>
+							<li data-value="6" onclick="qdType('6')">软件</li>
+							<li data-value="7" onclick="qdType('7')">标准</li>
+							<li data-value="8" onclick="qdType('8')">专利</li>
+							<li data-value="8" onclick="qdType('9')">开放数据</li>
+						</ul>
+					</div>
+					<input type="hidden" name="" value="">
+				</div>
+				<input type="text" name="" class="input" id="searchKey" placeholder="可搜索数据集、数据应用、数据分析工具、作者、项目名称、CSTR、DOI">
+				<a id="searchBtn" class="more" style="cursor:pointer;">检索</a>
+			</div>
+
+			<!--顶部统计-->
+			<div class="index_stati" style="width: 104%">
+				<ul>
+					<li><p><b id="dataVolumeNub" class="counter">4.6</b></p>数据量(PB)</li>
+					<li><p><a href="/general/dataSetHome" target="_blank"><b id="dataResourcesNub" class="counter">62675</b></a></p>发布资源(个)</li>
+					<li><p><a href="/general/dataSetHome?dml=sciProject" target="_blank"><b id="huiJiaoProjectNub" class="counter">3102</b></a></p>服务汇交项目(个)</li>
+					<li><p><a href="#ilist11"><b id="organNub" class="counter">42</b></a></p>参建单位(个)</li>
+					<li><p><b id="viewNub" class="counter">4135.55</b>万</p>总访问量(人次)</li>
+				</ul>
+			</div>
+
+			<!--顶部资讯-->
+			<div class="index_note">
+				<div class="inote swiper-container-vertical">
+					<div id="bannerNews" class="swiper-wrapper" style="transition-duration: 1500ms; transform: translate3d(0px, -120px, 0px);">
+						<!--							<div class="swiper-slide swiper-slide-prev swiper-slide-duplicate-next" data-swiper-slide-index="0" style="height: 60px;">-->
+						<!--								<a href="/general/news/newsNoticeView?id=6177ac1599f1de6719243a1f" target="_blank">国家基础学科公共科学数据中心参加国家“十三五”科技创新成就展</a>-->
+						<!--							</div>-->
+						<!--							<div class="swiper-slide swiper-slide-prev swiper-slide-duplicate-next" data-swiper-slide-index="0" style="height: 60px;">-->
+						<!--								<a href="/general/news/newsNoticeView?id=617bccbb99f1de40c335aba7" target="_blank">“国家基础学科公共科学数据中心交通运输科学数据分中心”建设合作协议签约</a>-->
+						<!--							</div>-->
+					</div>
+					<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+				<a target="_blank" href="/general/news/newsNotice" class="more">更多资讯</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="imain2">
+		<div class="mainbox">
+			<div class="imain_l">
+				<!--高质量数据集-->
+				<div class="ibox">
+					<div class="ibox_t"><b>用户好评数据集推介</b><span>POPULAR DATASETS RECOMMENDED BY USERS</span><a href="/general/dataSetHome?isHighQuality=1" class="more">更多</a></div>
+					<div class="ilist1 swiper-container-horizontal" style="height:350px;" id="highQualitySwiper">
+						<div id="buildDataMod2" class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px);">
+
+						</div>
+						<div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"></div>
+						<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+					</div>
+				</div>
+				<!--自建数据资源-->
+				<div class="ibox" style="margin-top: 30px;">
+					<div class="ibox_t"><b>自建数据资源</b><span>self-built data resources</span></div>
+					<div class="ilist1 swiper-container-horizontal" style="height:175px;" id="buildDataSwiper">
+						<div id="buildDataMod" class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px);">
+							<!-- Page 1 -->
+							<div class="swiper-slide" data-swiper-slide-index="0" style="width: 875px;">
+<!--								<div class="item">-->
+<!--									<a href="javascript:pageIndexDataBaseInfo('64ef2e92bb16e07b0603ae37')" class="item_m" title="青海湖区域综合研究专题数据库">-->
+<!--										<div class="img"><img src="https://www.nbsdc.cn/cfsnew/img/db/03青海湖区域综合研究专题数据库.png"></div>-->
+<!--										<div class="t">青海湖区域综合研究专题数据库</div>-->
+<!--									</a>-->
+<!--								</div>-->
+								<div class="item">
+									<a href="javascript:pageIndexDataBaseInfo('67ff46c06bacd8c2dcc2184d')" class="item_m" title="交通运输分中心">
+										<div class="img"><img src="https://www.nbsdc.cn/cfsnew/img/db/24交通运输分中心.png"></div>
+										<div class="t">交通运输分中心</div>
+									</a>
+								</div>
+								<div class="item">
+									<a href="javascript:pageIndexDataBaseInfo('606eafff70b7905cba61ee03')" class="item_m" title="中国动物主题数据库">
+										<div class="img"><img src="https://www.nbsdc.cn/cfsnew/img/db/01中国动物主题数据库.png"></div>
+										<div class="t">中国动物主题数据库</div>
+									</a>
+								</div>
+								<div class="item">
+									<a href="javascript:pageIndexDataBaseInfo('606eb00370b7905cba6225b9')" class="item_m" title="光学技术数据库">
+										<div class="img"><img src="https://www.nbsdc.cn/cfsnew/img/db/02光学技术数据库.png"></div>
+										<div class="t">光学技术数据库</div>
+									</a>
+								</div>
+								<div class="item">
+									<a href="javascript:pageIndexDataBaseInfo('61823cf60e75a7df387117d0')" class="item_m" title="世界山茶属植物品种数据库">
+										<div class="img"><img src="https://www.nbsdc.cn/dataImage/image/cover/世界山茶属植物品种数据库.png"></div>
+										<div class="t">世界山茶属植物品种数据库</div>
+									</a>
+								</div>
+								<div class="item">
+									<a href="javascript:pageIndexDataBaseInfo('606eb00a70b7905cba62894d')" class="item_m" title="地理空间数据库">
+										<div class="img"><img src="https://www.nbsdc.cn/cfsnew/img/db/04地理空间数据库.png"></div>
+										<div class="t">地理空间数据库</div>
+									</a>
+								</div>
+							</div>
+
+							<!-- Page 2 -->
+							<div class="swiper-slide" data-swiper-slide-index="1" style="width: 875px;">
+								<div class="item">
+									<a href="javascript:pageIndexDataBaseInfo('606eb00e70b7905cba62bbd2')" class="item_m" title="化学主题数据库">
+										<div class="img"><img src="https://www.nbsdc.cn/cfsnew/img/db/05化学主题数据库.png"></div>
+										<div class="t">化学主题数据库</div>
+									</a>
+								</div>
+								<div class="item">
+									<a href="javascript:pageIndexDataBaseInfo('606eb02270b7905cba63c0e2')" class="item_m" title="中国植物主题数据库">
+										<div class="img"><img src="https://www.nbsdc.cn/cfsnew/img/db/06中国植物主题数据库.png"></div>
+										<div class="t">中国植物主题数据库</div>
+									</a>
+								</div>
+								<div class="item">
+									<a href="javascript:pageIndexDataBaseInfo('606eb02670b7905cba63f77d')" class="item_m" title="中国植物DNA条形数据库">
+										<div class="img"><img src="https://www.nbsdc.cn/cfsnew/img/db/07中国植物DNA条形码数据库.png"></div>
+										<div class="t">中国植物DNA条形数据库</div>
+									</a>
+								</div>
+								<div class="item">
+									<a href="javascript:pageIndexDataBaseInfo('606eb02870b7905cba641751')" class="item_m" title="核物理主题数据库">
+										<div class="img"><img src="https://www.nbsdc.cn/cfsnew/img/db/08核物理主题数据库.png"></div>
+										<div class="t">核物理主题数据库</div>
+									</a>
+								</div>
+								<div class="item">
+									<a href="javascript:pageIndexDataBaseInfo('606eb07b70b7905cba68aded')" class="item_m" title="原子分子物理主题数据库">
+										<div class="img"><img src="https://www.nbsdc.cn/cfsnew/img/db/09原子分子物理主题数据库.png"></div>
+										<div class="t">原子分子物理主题数据库</div>
+									</a>
+								</div>
+							</div>
+
+							<!-- Page 3 -->
+							<div class="swiper-slide" data-swiper-slide-index="2" style="width: 875px;">
+								<div class="item">
+									<a href="javascript:pageIndexDataBaseInfo('606eb08970b7905cba697d72')" class="item_m" title="中国病毒资源基础数据库">
+										<div class="img"><img src="https://www.nbsdc.cn/cfsnew/img/db/13中国病毒资源基础数据库.png"></div>
+										<div class="t">中国病毒资源基础数据库</div>
+									</a>
+								</div>
+								<div class="item">
+									<a href="javascript:pageIndexDataBaseInfo('606eb09070b7905cba69b707')" class="item_m" title="中国活体人脑成像共享数据库">
+										<div class="img"><img src="https://www.nbsdc.cn/cfsnew/img/db/15国际人脑数据共享计划数据库.png"></div>
+										<div class="t">中国活体人脑成像共享数据库</div>
+									</a>
+								</div>
+								<div class="item">
+									<a href="javascript:pageIndexDataBaseInfo('606eb09470b7905cba69e9d4')" class="item_m" title="干细胞与代谢疾病数据库">
+										<div class="img"><img src="https://www.nbsdc.cn/cfsnew/img/db/16干细胞与代谢疾病数据库.png"></div>
+										<div class="t">干细胞与代谢疾病数据库</div>
+									</a>
+								</div>
+								<div class="item">
+									<a href="javascript:pageIndexDataBaseInfo('606eb09770b7905cba6a158d')" class="item_m" title="微重力多学科数据库">
+										<div class="img"><img src="https://www.nbsdc.cn/cfsnew/img/db/17载人航天空间科学与应用数据库.png"></div>
+										<div class="t">微重力多学科数据库</div>
+									</a>
+								</div>
+								<div class="item">
+									<a href="javascript:pageIndexDataBaseInfo('606eb09b70b7905cba6a4fc6')" class="item_m" title="材料学科领域基础科学数据库">
+										<div class="img"><img src="https://www.nbsdc.cn/cfsnew/img/db/18材料学科领域基础科学数据库.png"></div>
+										<div class="t">材料学科领域基础科学数据库</div>
+									</a>
+								</div>
+							</div>
+
+							<!-- Page 4 -->
+							<div class="swiper-slide" data-swiper-slide-index="3" style="width: 875px;">
+								<div class="item">
+									<a href="javascript:pageIndexDataBaseInfo('606eb09e70b7905cba6a66ba')" class="item_m" title="干旱区药用资源数据库">
+										<div class="img"><img src="https://www.nbsdc.cn/cfsnew/img/db/19干旱区药用资源数据库.png"></div>
+										<div class="t">干旱区药用资源数据库</div>
+									</a>
+								</div>
+								<div class="item">
+									<a href="javascript:pageIndexDataBaseInfo('6177f10013558ad7d5bfbb66')" class="item_m" title="面向农业图像理解的机器学习数据库">
+										<div class="img"><img src="https://www.nbsdc.cn/cfsnew/img/db/21农业病虫害研究图库.png"></div>
+										<div class="t">面向农业图像理解的机器学习数据库</div>
+									</a>
+								</div>
+								<div class="item">
+									<a href="javascript:pageIndexDataBaseInfo('617132f4f4f7b4f3b36db6dd')" class="item_m" title="环境健康主题数据库">
+										<div class="img"><img src="https://www.nbsdc.cn/cfsnew/img/db/20环境健康主题数据库.png"></div>
+										<div class="t">环境健康主题数据库</div>
+									</a>
+								</div>
+								<div class="item">
+									<a href="javascript:pageIndexDataBaseInfo('61823bbc0e75a7df387117cf')" class="item_m" title="中国海岸带植物资源数据库">
+										<div class="img"><img src="https://www.nbsdc.cn/dataImage/image/cover/中国海岸带植物资源数据库.png"></div>
+										<div class="t">中国海岸带植物资源数据库</div>
+									</a>
+								</div>
+								<div class="item">
+									<a href="javascript:pageIndexDataBaseInfo('61823a480e75a7df387117ce')" class="item_m" title="医学物理数据库">
+										<div class="img"><img src="https://www.nbsdc.cn/dataImage/image/cover/医学物理数据库.png"></div>
+										<div class="t">医学物理数据库</div>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets">
+							<span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span>
+							<span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span>
+							<span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span>
+							<span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 4"></span>
+						</div>
+						<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+					</div>
+				</div>
+			</div>
+
+			<div class="imain_r">
+				<!--最热数据集-->
+				<div class="ibox">
+					<div class="ibox_t"><b>最热数据集</b><i class="hot"></i><a href="/general/dataSetHome" target="_blank" class="more">更多</a></div>
+					<div class="ilist2">
+						<ul id="getDataLists"></ul>
+					</div>
+				</div>
+
+				<!--中心工作动态-->
+				<div class="ibox">
+					<div class="ibox_t"><b>中心工作动态</b><a target="_blank" href="/general/news/newsNotice" class="more">更多</a></div>
+					<div class="ilist2">
+						<ul id="getNewsLists"></ul>
+					</div>
+				</div>
+
+				<!--微课堂-->
+				<div class="ibox">
+					<div class="ibox_t"><b>微课堂</b>
+						<a href="/general/eduCenter" target="_blank" class="more">更多</a>
+					</div>
+					<div class="ivideo">
+						<a href="/general/eduCenter" target="_blank">
+							<img src="https://www.nbsdc.cn/cfsnew/img/index/video.jpg"><i class="play"></i>
+						</a>
+					</div>
+				</div>
+
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+
+	<div class="imain3">
+		<div class="mainbox">
+			<div class="imain_l">
+
+				<!--项目汇交数据-->
+				<div class="ibox">
+					<div class="ibox_t">
+						<b>项目汇交数据</b><span>Data Archiving</span><a href="/general/dataSetHome?dml=sciProject" target="_blank" class="more">更多</a>
+					</div>
+					<div class="ilist3" id="projectList">
+						<div class="item">
+							<a href="/general/pubProjectInfo?id=617b9a7f99f1de3792a9dd23" target="_blank" class="item_m">
+								<div class="img"><img src="https://www.nbsdc.cn/dataImage/image/cover/晶圆刻3.png" style="width: 186px;"></div>
+								<div class="t" title="高性能陶瓷部件高效精密制造关键技术">高性能陶瓷部件高效精密制造关键技术</div>
+								<div class="time">类型：国家重点研发计划项目</div>
+								<div class="time">专项：重点基础材料技术提升与产业化</div>
+								<div class="time">单位：中国科学院上海硅酸盐研究所</div>
+							</a>
+						</div>
+						<div class="item">
+							<a href="/general/pubProjectInfo?id=6098edadddc54130f882b9e6" target="_blank" class="item_m">
+								<div class="img"><img src="https://www.nbsdc.cn/cfsnew/img/c/xnkj.jpg" style="width: 186px;"></div>
+								<div class="t" title="网络空间数字虚拟资产保护基础科学问题研究">网络空间数字虚拟资产保护基础科学问题研究</div>
+								<div class="time">类型：国家重点研发计划项目</div>
+								<div class="time">专项：网络空间安全</div>
+								<div class="time">单位：四川大学</div>
+							</a>
+						</div>
+						<div class="item">
+							<a href="/general/pubProjectInfo?id=6098edaaddc54130f882b9ca" target="_blank" class="item_m">
+								<div class="img"><img src="https://www.nbsdc.cn/cfsnew/img/c/jtdl.jpg" style="width: 186px;"></div>
+								<div class="t" title="道路交通运输大数据平台关键技术研究与应用示范">道路交通运输大数据平台关键技术研究与应用示范</div>
+								<div class="time">类型：国家重点研发计划项目</div>
+								<div class="time">专项：公共安全风险防控与应急技术装备</div>
+								<div class="time">单位：交通运输部公路科学研究所</div>
+							</a>
+						</div>
+						<div class="item">
+							<a href="/general/pubProjectInfo?id=616679db1cf85f0d0c3db89b" target="_blank" class="item_m">
+								<div class="img"><img src="https://www.nbsdc.cn/dataImage/image/cover/智能电网.png" style="width: 186px;"></div>
+								<div class="t" title="支撑低碳冬奥的智能电网综合示范工程">支撑低碳冬奥的智能电网综合示范工程</div>
+								<div class="time">类型：国家重点研发计划项目</div>
+								<div class="time">专项：智能电网技术与装备</div>
+								<div class="time">单位：国网冀北电力有限公司</div>
+							</a>
+						</div>
+						<div class="item">
+							<a href="/general/pubProjectInfo?id=616d2fbc1cf85f2922adbd51" target="_blank" class="item_m">
+								<div class="img"><img src="https://www.nbsdc.cn/dataImage/image/cover/交直流混联电网.png" style="width: 186px;"></div>
+								<div class="t" title="交直流混联电网连锁故障预警与主动保护">交直流混联电网连锁故障预警与主动保护</div>
+								<div class="time">类型：国家重点研发计划项目</div>
+								<div class="time">专项：智能电网技术与装备</div>
+								<div class="time">单位：华北电力大学</div>
+							</a>
+						</div>
+						<div class="item">
+							<a href="/general/pubProjectInfo?id=617a651d1cf85f6dc641c3ec" target="_blank" class="item_m">
+								<div class="img"><img src="https://www.nbsdc.cn/dataImage/image/cover/co2.png" style="width: 186px;"></div>
+								<div class="t" title="环保型管道输电关键技术">环保型管道输电关键技术</div>
+								<div class="time">类型：国家重点研发计划项目</div>
+								<div class="time">专项：智能电网技术与装备</div>
+								<div class="time">单位：中国电力科学研究院有限公司</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="imain_r">
+				<!--项目汇交动态-->
+				<div class="ibox">
+					<div class="ibox_t"><b>项目汇交动态</b></div>
+					<div class="iproject_box">
+						<div class="ilist4">
+							<ul>
+								<li><p><b id="projectNub" class="counter">3102</b>个</p>项目总数</li>
+								<li><p><b id="serviceChargeNub" class="counter">82</b>个</p>服务专项总数</li>
+								<li><p><b id="dataTotalNub" class="counter">2085</b>个</p>开具汇交凭证</li>
+								<li><p><b id="projectSpecial" class="counter">5</b>个</p>服务主管机构</li>
+							</ul>
+						</div>
+						<div class="ilist5">
+							<ul>
+								<!--									<li><a href="https://www.nbsdc.cn/datarchive" target="_blank" class="t1"><img src="https://www.nbsdc.cn/cfsnew/img/index/rnav_b1.png">项目数据汇交</a></li>-->
+								<li><a href="https://www.nbsdc.cn/archive" target="_blank" class="t1"><img src="https://www.nbsdc.cn/cfsnew/img/index/rnav_b1.png">项目数据汇交</a></li>
+								<li><a href="https://www.scidb.cn/c/nbsdc" target="_blank" class="t2"><img src="https://www.nbsdc.cn/cfsnew/img/index/rnav_b2.png">其他数据汇交</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>.
+	</div>
+
+	<div class="imain4">
+		<div class="mainbox">
+			<div class="imain_l">
+				<!--典型服务案例-->
+				<div class="ibox">
+					<div class="ibox_t"><b>典型服务案例</b><span>Service cases</span><a href="/general/cases" target="_blank" class="more">更多</a></div>
+					<div class="ilist6" id="casesList">
+						<div class="item">
+							<a href="/general/dataDetail?id=60bdee4836565734b7c8ee2c&amp;type=2" target="_blank" class="item_m">
+								<div class="img"><img src="https://www.nbsdc.cn/cfsnew/img/index/index-c1.png" width="100%"></div>
+								<div class="t" title="为国家重点研发计划项目提供重粒子碰撞数据">为国家重点研发计划项目提供重粒子碰撞数据</div>
+							</a>
+						</div>
+						<div class="item">
+							<a href="/general/dataDetail?id=60bdee4836565734b7c8ee29&amp;type=2" target="_blank" class="item_m">
+								<div class="img"><img src="https://www.nbsdc.cn/cfsnew/img/index/index-c2.png" width="100%"></div>
+								<div class="t" title="铁皮石斛多糖合成的基因家族分析">铁皮石斛多糖合成的基因家族分析</div>
+							</a>
+						</div>
+						<div class="item">
+							<a href="/general/dataDetail?id=60bdee4836565734b7c8ee23&amp;type=2" target="_blank" class="item_m">
+								<div class="img"><img src="https://www.nbsdc.cn/cfsnew/img/index/index-c3.png" width="100%"></div>
+								<div class="t" title="为催化剂表面设计及反应热动力学性质研究提供基础数据支撑">为催化剂表面设计及反应热动力学性质研究提供基础数据支撑</div>
+							</a>
+						</div>
+						<div class="item">
+							<a href="/general/dataDetail?id=60bdee4836565734b7c8ee35&amp;type=2" target="_blank" class="item_m">
+								<div class="img"><img src="https://www.nbsdc.cn/cfsnew/img/index/index-c4.png" width="100%"></div>
+								<div class="t" title="为腾讯企鹅爱地球项目提供动物物种名录">为腾讯企鹅爱地球项目提供动物物种名录</div>
+							</a>
+						</div>
+						<div class="item">
+							<a href="/general/dataDetail?id=60bdee4836565734b7c8ee26&amp;type=2" target="_blank" class="item_m">
+								<div class="img"><img src="https://www.nbsdc.cn/cfsnew/img/index/index-c5.png" width="100%"></div>
+								<div class="t" title="为超强酸材料的制备及在废旧塑料催化裂解中的应用研究提供基础数据支撑">为超强酸材料的制备及在废旧塑料催化裂解中的应用研究提供基础数据支撑</div>
+							</a>
+						</div>
+						<div class="item">
+							<a href="/general/dataDetail?id=60bdee4836565734b7c8ee2f&amp;type=2" target="_blank" class="item_m">
+								<div class="img"><img src="https://www.nbsdc.cn/cfsnew/img/index/index-c8.jpg" width="100%"></div>
+								<div class="t" title="人造血干/祖细胞取得重要进展">人造血干/祖细胞取得重要进展</div>
+							</a>
+						</div>
+						<div class="item">
+							<a href="/general/dataDetail?id=60bdee4836565734b7c8ee32&amp;type=2" target="_blank" class="item_m">
+								<div class="img"><img src="https://www.nbsdc.cn/cfsnew/img/index/index-c7.png" width="100%"></div>
+								<div class="t" title="材料数据为沈阳和世泰通用钛业有限公司产品研发提供服务">材料数据为沈阳和世泰通用钛业有限公司产品研发提供服务</div>
+							</a>
+						</div>
+						<div class="item">
+							<a href="/general/dataDetail?id=60bdee4836565734b7c8ee20&amp;type=2" target="_blank" class="item_m">
+								<div class="img"><img src="https://www.nbsdc.cn/cfsnew/img/index/index-c4.jpg" width="100%"></div>
+								<div class="t" title="传统染料植物板蓝的靛蓝生物合成机制研究">传统染料植物板蓝的靛蓝生物合成机制研究</div>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<!--工具软件-->
+				<div class="ibox">
+					<!--						因为点击“更多”之后，显示的10个软件无法提供服务，所以先把“更多按钮隐藏”-->
+					<!--						<div class="ibox_t"><b>工具软件</b><span>TOOLS SOFTWARE</span><a href="/general/generalTools" class="more">更多</a></div>-->
+					<div class="ibox_t"><b>工具软件</b><span>TOOLS SOFTWARE</span></div>
+					<div class="ilist7">
+						<ul id="toolsList">
+							<li>
+								<a target="_blank" href="https://market.casdc.cn/DataSpace">
+									<img src="https://www.nbsdc.cn/cfsnew/img/index/ruanjian1.png" style="">
+									<p>数据协同管理工具</p>
+								</a>
+							</li>
+							<li>
+								<a target="_blank" href="https://market.casdc.cn/InstDB">
+									<img src="https://www.nbsdc.cn/cfsnew/img/index/ruanjian2.png" style=""><p>机构数据存储库工具</p>
+								</a>
+							</li>
+							<li>
+								<a target="_blank" href="https://market.casdc.cn/DataQ">
+									<img src="https://www.nbsdc.cn/cfsnew/img/index/ruanjian3.png" style=""><p>科学数据质量管理工具</p>
+								</a>
+							</li>
+							<li>
+								<a target="_blank" href="https://market.casdc.cn/%CF%80Flow">
+									<img src="https://www.nbsdc.cn/cfsnew/img/index/ruanjian4.png" style=""><p>大数据流水线系统</p>
+								</a>
+							</li>
+							<li>
+								<a target="_blank" href="https://market.casdc.cn/DPGuard">
+									<img src="https://www.nbsdc.cn/cfsnew/img/index/ruanjian5.png" style=""><p>数据门户安全防护工具</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<!--标准规范-->
+				<div class="ibox">
+					<div class="ibox_t"><b>标准规范</b><span>STANDARD SPECIFICATIONS</span><a href="/general/standard" target="_blank" class="more">更多</a></div>
+					<div class="ilist8">
+						<div class="tit">国家标准</div>
+						<ul>
+							<li><a target="_blank" href="https://std.samr.gov.cn/gb/search/gbDetailed?id=F0DFF5812D92DEA9E05397BE0A0A0455"><i class="t1"></i><span>20221229-T-306</span><p>科学数据溯源元数据</p></a></li>
+							<li><a target="_blank" href="https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=0A49B2D53C0489CA8F669B36EC1AEF35"><i class="t5"></i><span>GB/T 42813-2023</span><p>数据论文出版元数据</p></a></li>
+							<li><a target="_blank" href="http://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=A495CA355BAF00D962AA8DD84C3B2C16"><i class="t2"></i><span>GB/T 35294-2017</span><p>信息技术科学数据引用</p></a></li>
+							<li><a target="_blank" href="http://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=B05FB0694A5C2E9995C50F8F57645304"><i class="t3"></i><span>GB/T 34945-2017</span><p>信息技术数据溯源描述模型</p></a></li>
+							<li><a target="_blank" href="http://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=1F7BCCCD854347ABD8F2190592494A0E"><i class="t6"></i><span>GB/T 32739-2016</span><p>土壤科学数据元数据</p></a></li>
+							<li><a target="_blank" href="http://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=5706D278172DF42D69814F4DD57C2F4E"><i class="t4"></i><span>GB/T 31073-2014</span><p>科技平台服务核心元数据</p></a></li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+			<div class="imain_r">
+
+				<!--专题服务-->
+				<div class="ibox">
+					<div class="ibox_t"><b>专题服务</b><a href="/general/independent" class="more">更多</a></div>
+					<div class="ilist9">
+						<ul>
+							<li><a href="/general/independent"><img src="https://www.nbsdc.cn/cfsnew/img/index/s1.png"><p>自主关键技术服务</p></a></li>
+							<li><a href="/general/oneServices"><img src="https://www.nbsdc.cn/cfsnew/img/index/s2.png"><p>一带一路服务</p></a></li>
+							<li><a href="/general/majorStrategy"><img src="https://www.nbsdc.cn/cfsnew/img/index/s3.png"><p>重大战略服务</p></a></li>
+							<li><a href="/general/bightServices"><img src="https://www.nbsdc.cn/cfsnew/img/index/s4.png"><p>大湾区服务</p></a></li>
+							<li><a href="/general/interdisciplinaryServices"><img src="https://www.nbsdc.cn/cfsnew/img/index/s5.png"><p>交叉学科服务</p></a></li>
+							<li><a href="/general/geographyServices"><img src="https://www.nbsdc.cn/cfsnew/img/index/s6.png"><p>基础地理服务</p></a></li>
+						</ul>
+					</div>
+				</div>
+
+				<!--数据服务-->
+				<div class="ibox">
+					<div class="ibox_t"><b>数据服务</b></div>
+					<div class="ilist9 ilist92">
+						<ul>
+							<li><a href="/general/dataCrossover"  target="_blank"><img src="https://www.nbsdc.cn/cfsnew/img/index/s7.png"><p>数据交叉融合应用</p></a></li>
+							<li><a href="/general/dataSetHome"  target="_blank"><img src="https://www.nbsdc.cn/cfsnew/img/index/s8.png"><p>数据资源服务</p></a></li>
+							<li><a href="/general/news/newsNoticeView?id=60bdc21d36565734b7c8ee19"><img src="https://www.nbsdc.cn/cfsnew/img/index/s9.png"><p>数据库（集）收录申请</p></a></li>
+							<li><a href="https://www.cnic.cn/front/pc.html?_=1608531541135#/cnicSite/arpKnowledge/322/168"  target="_blank"><img src="https://www.nbsdc.cn/cfsnew/img/index/s10.png"><p>用户反馈</p></a></li>
+							<li><a href="/general/generalTools" target="_blank"><img src="https://www.nbsdc.cn/cfsnew/img/index/s11.png"><p>数据工具</p></a></li>
+							<li><a href="/general/dataSetHome?tpe=8" target="_blank"><img src="https://www.nbsdc.cn/cfsnew/img/index/s12.png"><p>数据标准</p></a></li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+			<div class="clear"></div>
+
+
+			<!--共享杯-->
+			<div class="isharing">
+				<div class="tit"></div>
+				<div class="con">
+					<ul>
+						<li><a href="/general/sharingCup"><img src="https://www.nbsdc.cn/cfsnew/img/index/g1.png"><b class="" id="gameNumber">8</b>届数</a></li>
+						<li><a href="/general/sharingCup"><img src="https://www.nbsdc.cn/cfsnew/img/index/g2.png"><b class="" id="joinNumber">800+</b>参赛总人数</a></li>
+						<li><a href="/general/sharingCup"><img src="https://www.nbsdc.cn/cfsnew/img/index/g3.png"><b class="" id="submitWorkNumber">160+</b>累计提交作品</a></li>
+						<li><a href="/general/sharingCup"><img src="https://www.nbsdc.cn/cfsnew/img/index/g4.png"><b class="" id="awardWinningNumber">10+</b>获奖</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<!--参建单位-->
+			<div class="ibox" id="ilist11">
+				<div class="ibox_t"><b>建设单位(42)</b><span>Participating units</span></div>
+				<div class="ilist11">
+					<ul>
+						<li><a href="https://www.cnic.cas.cn/" target="_blank" title="中国科学院计算机网络信息中心"><img src="https://www.nbsdc.cn/cfsnew/img/logo/cnic.png"><p>计算机网络信息中心</p></a></li>
+						<li><a href="https://www.bnu.edu.cn/" target="_blank" title="北京师范大学"><img src="https://www.nbsdc.cn/cfsnew/img/logo/01.jfif"><p>北京师范大学</p></a></li>
+						<li><a href="http://www.hit.edu.cn/" target="_blank"  title="哈尔滨工业大学"><img src="https://www.nbsdc.cn/cfsnew/img/logo/02.jpeg"><p>哈尔滨工业大学</p></a></li>
+						<li><a href="https://www.nefu.edu.cn/" target="_blank"  title="东北林业大学"><img src="https://www.nbsdc.cn/cfsnew/img/logo/03.jpg"><p>东北林业大学</p></a></li>
+						<li><a href="https://www.jlu.edu.cn/" target="_blank" title="吉林大学"><img src="https://www.nbsdc.cn/cfsnew/img/logo/44.png"><p>吉林大学</p></a></li>
+						<li><a href="http://www.ciae.ac.cn/" target="_blank"  title="中国原子能科学研究院"><img src="https://www.nbsdc.cn/cfsnew/img/logo/04.jpg"><p>中国原子能科学研究院</p></a></li>
+						<li><a href="http://www.iapcm.ac.cn/" target="_blank"  title="北京应用物理与计算数学研究所"><img src="https://www.nbsdc.cn/cfsnew/img/logo/05.jpg"><p>北京应用物理与计算数学研究所</p></a></li>
+						<li><a href="http://www.hrbeu.edu.cn/" target="_blank"  title="哈尔滨工程大学"><img src="https://www.nbsdc.cn/cfsnew/img/logo/06.jfif"><p>哈尔滨工程大学</p></a></li>
+						<li><a href="http://www.hlju.edu.cn/" target="_blank" title="黑龙江大学"><img src="https://www.nbsdc.cn/cfsnew/img/logo/07.jfif"><p>黑龙江大学</p></a></li>
+						<li><a href="http://www.haas.cn/" target="_blank" title="黑龙省农业科学院土肥所"><img src="https://www.nbsdc.cn/cfsnew/img/logo/08.jfif"><p>黑龙省农业科学院土肥所</p></a></li>
+						<li><a href="http://www.hljkjt.gov.cn/html/ZWGK/kjtgk/zzjg/zsdw/hljskjxxzx/list.html" target="_blank"  title="黑龙江省科技资源共享服务中心"><img src="https://www.nbsdc.cn/cfsnew/img/logo/10.png"><p>黑龙江省科技资源共享服务中心</p></a></li>
+						<li><a href="http://www.neau.edu.cn/" target="_blank" title="东北农业大学"><img src="https://www.nbsdc.cn/cfsnew/img/logo/11.jpg"><p>东北农业大学</p></a></li>
+						<li><a href="http://www.nanoctr.cn/" target="_blank" title="国家纳米材料中心"><img src="https://www.nbsdc.cn/cfsnew/img/logo/13.png"><p>国家纳米材料中心</p></a></li>
+						<li><a href="http://www.ioz.ac.cn/" target="_blank" title="中国科学院动物研究所"><img src="https://www.nbsdc.cn/cfsnew/img/logo/14.png"><p>动物研究所</p></a></li>
+						<li><a href="http://www.ciomp.ac.cn/" target="_blank" title="中国科学院长春光学精密机械与物理研究所"><img src="https://www.nbsdc.cn/cfsnew/img/logo/15.jpg"><p>长春光学精密机械与物理研究所</p></a></li>
+						<li><a href="http://www.ipe.cas.cn/" target="_blank" title="中国科学院过程工程研究所"><img src="https://www.nbsdc.cn/cfsnew/img/logo/16.jpg"><p>过程工程研究所</p></a></li>
+						<li><a href="http://www.ibcas.ac.cn/" target="_blank" title="中国科学院植物研究所"><img src="https://www.nbsdc.cn/cfsnew/img/logo/17.jpg"><p>植物研究所</p></a></li>
+						<li><a href="http://www.kib.ac.cn/" target="_blank" title="中国科学院昆明植物研究所"><img src="https://www.nbsdc.cn/cfsnew/img/logo/18.jpg"><p>昆明植物研究所</p></a></li>
+						<li><a href="http://www.pmo.ac.cn/" target="_blank" title="中国科学院紫金山天文台"><img src="https://www.nbsdc.cn/cfsnew/img/logo/19.png"><p>紫金山天文台</p></a></li>
+						<li><a href="http://www.shao.ac.cn/" target="_blank" title="中国科学院上海天文台"><img src="https://www.nbsdc.cn/cfsnew/img/logo/20.png"><p>上海天文台</p></a></li>
+						<li><a href="http://www.whiob.ac.cn/" target="_blank" title="中国科学院武汉植物园"><img src="https://www.nbsdc.cn/cfsnew/img/logo/21.jpg"><p>武汉植物园</p></a></li>
+						<li><a href="http://www.whiov.ac.cn/" target="_blank" title="中国科学院武汉病毒研究所"><img src="https://www.nbsdc.cn/cfsnew/img/logo/22.png"><p>武汉病毒研究所</p></a></li>
+						<li><a href="http://www.psych.ac.cn/" target="_blank" title="中国科学院心理研究所"><img src="https://www.nbsdc.cn/cfsnew/img/logo/23.png"><p>心理研究所</p></a></li>
+						<li><a href="http://www.gibh.cas.cn/" target="_blank" title="中国科学院广州生物医药与健康研究院"><img src="https://www.nbsdc.cn/cfsnew/img/logo/24.jpg"><p>广州生物医药与健康研究院</p></a></li>
+						<li><a href="http://www.csu.cas.cn/" target="_blank" title="中国科学院空间应用工程与技术中心"><img src="https://www.nbsdc.cn/cfsnew/img/logo/25.jpg"><p>空间应用工程与技术中心</p></a></li>
+						<li><a href="http://www.imr.cas.cn/" target="_blank" title="中国科学院金属研究所"><img style="width:80px;" src="https://www.nbsdc.cn/cfsnew/img/logo/26.jpg"><p>金属研究所</p></a></li>
+						<li><a href="http://www.xjipc.cas.cn/" target="_blank" title="中国科学院新疆理化技术研究所"><img src="https://www.nbsdc.cn/cfsnew/img/logo/27.png"><p>新疆理化技术研究所</p></a></li>
+						<li><a href="http://www.cib.ac.cn/" target="_blank"  title="中国科学院成都生物研究所"><img src="https://www.nbsdc.cn/cfsnew/img/logo/29.jfif"><p>成都生物研究所</p></a></li>
+						<li><a href="http://www.ihb.ac.cn/" target="_blank" title="中国科学院水生生物研究所"><img src="https://www.nbsdc.cn/cfsnew/img/logo/31.jpg"><p>水生生物研究所</p></a></li>
+						<li><a href="http://www.sioc.ac.cn/" target="_blank" title="中国科学院上海有机化学研究所"><img src="https://www.nbsdc.cn/cfsnew/img/logo/32.jpg"><p>上海有机化学研究所</p></a></li>
+						<li><a href="http://www.ciac.jl.cn/" target="_blank" title="中国科学院长春应用化学研究所"><img src="https://www.nbsdc.cn/cfsnew/img/logo/33.jpg"><p>长春应用化学研究所"</p></a></li>
+						<li><a href="https://www.las.ac.cn/" target="_blank" title="中国科学院文献情报中心"><img src="https://www.nbsdc.cn/cfsnew/img/logo/34.png"><p>文献情报中心</p></a></li>
+						<li><a href="http://www.iccas.ac.cn/" target="_blank" title="中国科学院化学研究所"><img src="https://www.nbsdc.cn/cfsnew/img/logo/35.png"><p>化学研究所</p></a></li>
+						<li><a href="http://www.egi.ac.cn/" target="_blank" title="中国科学院新疆生态与地理研究所"><img src="https://www.nbsdc.cn/cfsnew/img/logo/37.jpg"><p>新疆生态与地理研究所</p></a></li>
+						<li><a href="http://www.xtbg.ac.cn/" target="_blank" title="中国科学院西双版纳植物园"><img src="https://www.nbsdc.cn/cfsnew/img/logo/38.jpg"><p>西双版纳植物园</p></a></li>
+						<li><a href="http://www.scib.ac.cn/" target="_blank" title="中国科学院华南植物园"><img src="https://www.nbsdc.cn/cfsnew/img/logo/39.jpg"><p>华南植物园</p></a></li>
+						<li><a href="http://www.kiz.ac.cn/" target="_blank" title="中国科学院昆明动物研究所"><img src="https://www.nbsdc.cn/cfsnew/img/logo/40.jfif"><p>昆明动物研究所</p></a></li>
+						<li><a href="http://www.hf.cas.cn/" target="_blank" title="中国科学院合肥物质科学研究院"><img src="https://www.nbsdc.cn/cfsnew/img/logo/41.png"><p>合肥物质科学研究院</p></a></li>
+						<li><a href="http://www.iue.cas.cn/" target="_blank" title="中国科学院城市环境研究所"><img src="https://www.nbsdc.cn/cfsnew/img/logo/42.png"><p>城市环境研究所</p></a></li>
+						<li><a href="http://www.yic.cas.cn/" target="_blank" title="中国科学院烟台海岸带研究所"><img src="https://www.nbsdc.cn/cfsnew/img/logo/43.png"><p>烟台海岸带研究所</p></a></li>
+						<li class="linon" name="dhli"><a href="http://qhh.qinghai.gov.cn/html/46/2249.html" target="_blank" title="青海湖国家级自然保护区"><img src="https://www.nbsdc.cn/cfsnew/img/logo/45.png"><p>青海湖国家级自然保护区</p></a></li>
+						<li class="linon" name="dhli"><a href="https://www.rioh.cn/" target="_blank" title="交通运输部公路科学研究院"><img src="https://www.nbsdc.cn/cfsnew/img/logo/46.png"><p>交通运输部公路科学研究院</p></a></li>
+					</ul>
+				</div>
+				<div class="imore">
+					<input type="hidden" id="moreBtnCvIpt" value="-1">
+					<a id="moreBtn" href="javaScript:moreBtn()" style="margin-top: 30px;">更多</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="footer">
+	<div class="mainbox">
+
+		<!--底部友情链接-->
+		<div class="footlink">
+			<div class="tit">友情链接</div>
+			<div class="con">
+				<div class="t">国家科技平台</div>
+				<div class="m">
+					<ul>
+						<ul>
+							<li><a target="_blank" href="https://escience.org.cn">中国科技资源共享网</a></li>
+							<li><a target="_blank" href="https://www.nhepsdc.cn/">国家高能物理科学数据中心</a></li>
+							<li><a target="_blank" href="https://bigd.big.ac.cn/">国家基因组科学数据中心</a></li>
+							<li><a target="_blank" href="https://nmdc.cn/">国家微生物科学数据中心</a></li>
+							<li><a target="_blank" href="https://www.nssdc.ac.cn/mhsy/html/index.html">国家空间科学数据中心 </a></li>
+							<li><a target="_blank" href="https://nadc.china-vo.org/">国家天文科学数据中心</a></li>
+							<li><a target="_blank" href="http://www.chinageoss.cn/dsp/home/index.jsp">国家对地观测科学数据中心</a></li>
+							<li><a target="_blank" href="http://www.chinare.org.cn/">国家极地科学数据中心</a></li>
+							<li><a target="_blank" href="http://data.tpdc.ac.cn/">国家青藏高原科学数据中心</a></li>
+							<li><a target="_blank" href="http://www.cnern.org.cn/">国家生态科学数据中心</a></li>
+							<li><a target="_blank" href="http://www.corrdata.org.cn/">国家材料腐蚀与防护科学数据中心</a></li>
+							<li><a target="_blank" href="http://www.ncdc.ac.cn/">国家冰川冻土沙漠科学数据中心</a></li>
+							<li><a target="_blank" href="https://www.nmdc.ac.cn/">国家计量科学数据中心</a></li>
+							<li><a target="_blank" href="http://www.geodata.cn/">国家地球系统科学数据中心</a></li>
+							<li><a target="_blank" href="https://www.ncmi.cn/">国家人口健康科学数据中心</a></li>
+							<li><a target="_blank" href="https://www.agridata.cn/">国家农业科学数据中心</a></li>
+							<li><a target="_blank" href="http://www.forestdata.cn/">国家林业和草原科学数据中心</a></li>
+							<li><a target="_blank" href="https://data.cma.cn/">国家气象科学数据中心</a></li>
+							<li><a target="_blank" href="https://data.earthquake.cn/">国家地震科学数据中心</a></li>
+							<li><a target="_blank" href="http://mds.nmdis.org.cn/">国家海洋科学数据中心</a></li>
+						</ul>
+					</ul>
+				</div>
+			</div>
+			<div class="con">
+				<div class="t">政府机构和组织</div>
+				<div class="m">
+					<ul>
+						<li><a target="_blank" href="http://www.most.gov.cn">中华人民共和国科学技术部</a></li>
+						<li><a target="_blank" href="https://escience.org.cn">国家科技基础条件平台中心</a></li>
+						<li><a target="_blank" href="http://www.cas.cn">中国科学院</a></li>
+						<li><a target="_blank" href="https://cnic.cas.cn">中国科学院计算机网络信息中心</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="con">
+				<div class="t">科技期刊</div>
+				<div class="m">
+					<ul>
+						<li><a target="_blank" href="http://www.csdata.org">《中国科学数据（中英文网络版）》</a></li>
+						<li><a target="_blank" href="http://www.jfdc.cnic.cn/CN/1674-9480/home.shtml">数据计算与发展前沿</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="con">
+				<div class="t">其他链接</div>
+				<div class="m">
+					<ul>
+						<li><a target="_blank" href="http://www.csdb.cn">中国科学院数据云</a></li>
+						<li><a target="_blank" href="http://www.cstcloud.cn/">中国科技云</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!--底部正文-->
+		<div class="footbox">
+			<div class="footlogo"><img style="height: 248px;width: 358px;margin-top: -52px" src="https://www.nbsdc.cn/cfsnew/img/foot/logo_foot.png"></div>
+			<div class="footnav">
+				<div class="item">
+					<div class="t">关于我们</div>
+					<div class="m">
+						<a target="_blank" href="/general/aboutPlatform">关于依托单位</a>
+						<a target="_blank" href="/general/aboutCenter">中心简介</a>
+						<a target="_blank" href="/general/standard">标准规范</a>
+						<a target="_blank" href="/general/commonProblem">常见问题</a>
+					</div>
+				</div>
+				<div class="item">
+					<div class="t">项目成果</div>
+					<div class="m">
+						<a href="/general/dataSetHome">资源成果</a>
+						<a href="/general/cases">服务案例</a>
+						<a href="/general/dataSetHome?tpe=5">论文</a>
+						<a href="/general/dataSetHome?tpe=7">专利</a>
+					</div>
+				</div>
+				<div class="item">
+					<div class="t">联系我们</div>
+					<div class="m">公共事务：nbsdc@cnic.cn<br>项目汇交：datarchive@cnic.cn<br>联系电话：(010)-58813784<br>联系地址：北京市海淀区东升南路2号院中国科学院信息化大厦</div>
+				</div>
+			</div>
+			<div class="footcode"><img src="https://www.nbsdc.cn/cfsnew/img/foot/数据中心微信公众号大图.png"><p>（微信公众号）</p></div>
+		</div>
+
+		<!-- 底部版权信息 -->
+		<div class="footcopy">版权所有:中国科学院计算机网络信息中心·国家基础学科公共科学数据中心 Copyright© 2020-2025 <a style="display:revert;" href="https://beian.miit.gov.cn/" target="_blank">备案序号：京ICP备09112257号-118</a> &nbsp; <a style="display:revert;" href="#"><img src="https://www.nbsdc.cn/cfsnew/img/foot/shiye.png"></a></div>
+	</div>
+</div>
+<div class="footcopy" id="tipsId" style="background-color: #384360;color: #fff8f8;font-size: 14px">
+	温馨提示：建议使用Chrome、Firefox、360浏览器极速模式浏览本站<br/>
+	采用1600*900或以上屏幕分辨率，获取页面最佳浏览效果
+</div>
+
+<div class="rtool">
+    <!--右侧工具栏-->
+    <style>
+        /* 智能体独立容器 */
+        .ai-agent-container {
+            position: relative;
+            width: 60px;
+            height: 60px;
+            margin: 10px auto;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* 底层光晕：持续呼吸感 */
+        .ai-glow-bg {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(34, 211, 238, 0.4) 0%, rgba(124, 92, 255, 0) 70%);
+            border-radius: 50%;
+            animation: ai-breathe 3s infinite ease-in-out;
+        }
+
+        /* 核心球体 */
+        .ai-sphere {
+            position: relative;
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, #7c5cff 0%, #22d3ee 100%);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 15px rgba(124, 92, 255, 0.4),
+            inset 0 -2px 5px rgba(0,0,0,0.2);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            z-index: 2;
+        }
+
+        /* 智能体头像动画优化 */
+        .ai-bot-svg {
+            width: 32px;
+            height: 32px;
+            transition: transform 0.3s ease;
+        }
+
+        /* 悬停态交互 */
+        .ai-agent-container:hover .ai-sphere {
+            transform: scale(1.1) translateY(-3px);
+            box-shadow: 0 12px 24px rgba(34, 211, 238, 0.5);
+        }
+
+        .ai-agent-container:hover .ai-glow-bg {
+            animation: ai-pulse-fast 0.6s infinite alternate;
+        }
+
+        /* 文字标签：现代感微型标签 */
+        .ai-label {
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 11px;
+            font-weight: 600;
+            color: #7c5cff;
+            white-space: nowrap;
+            letter-spacing: 1px;
+            opacity: 0.8;
+            text-transform: uppercase;
+        }
+
+        /* 动画关键帧 */
+        @keyframes ai-breathe {
+            0%, 100% { transform: scale(0.8); opacity: 0.3; }
+            50% { transform: scale(1.3); opacity: 0.6; }
+        }
+
+        @keyframes ai-pulse-fast {
+            from { transform: scale(1); opacity: 0.4; }
+            to { transform: scale(1.5); opacity: 0.1; }
+        }
+
+        /* 眼睛闪烁 */
+        .eye-blink {
+            animation: eye-blink-anim 4s infinite;
+            transform-origin: center;
+        }
+        @keyframes eye-blink-anim {
+            0%, 90%, 100% { transform: scaleY(1); }
+            95% { transform: scaleY(0.1); }
+        }
+    </style>
+<!--    智能体入口-->
+    <li class="ai-item">
+        <a href="/general/agent" style="text-decoration: none;">
+            <div class="ai-agent-container">
+                <div class="ai-glow-bg"></div>
+
+                <div class="ai-sphere">
+                    <svg class="ai-bot-svg" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="12" y="18" width="40" height="32" rx="10" fill="none" stroke="#ffffff" stroke-width="4"/>
+                        <rect x="18" y="24" width="28" height="20" rx="4" fill="rgba(255,255,255,0.2)"/>
+                        <circle class="eye-blink" cx="26" cy="32" r="3" fill="#ffffff"/>
+                        <circle class="eye-blink" cx="38" cy="32" r="3" fill="#ffffff"/>
+
+                        <path d="M 25 41 Q 32 45 39 41" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+
+                        <line x1="32" y1="18" x2="32" y2="10" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+                        <circle cx="32" cy="8" r="3" fill="#ffffff">
+                            <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite" />
+                        </circle>
+                    </svg>
+                </div>
+
+                <span class="ai-label">智能助手</span>
+            </div>
+        </a>
+    </li>
+        <li><a href="https://www.cnic.cn/front/pc.html?_=1608531541135#/cnicSite/arpKnowledge/322/168" target="_blank"><img src="https://www.nbsdc.cn/cfsnew/img/foot/tool1.png">提交问题</a></li>
+        <li><a href="/archive" target="_blank"><img src="https://www.nbsdc.cn/cfsnew/img/foot/tool2.png">项目汇交</a></li>
+        <li>
+            <a href="" id="ruanInfo">
+                <img src="https://www.nbsdc.cn/cfsnew/img/foot/tool3.png">软件征集
+            </a>
+        </li>
+        <li><a href="/general/contactUs" target="_blank"><img src="https://www.nbsdc.cn/cfsnew/img/foot/tool4.png">联系我们</a></li>
+
+    </ul>
+</div>
+<!--	<div class="backtop"></div>-->
+
+<div id="float" onmouseover="clearPos1()" onmouseout="changePos()">
+	<!--		<a href="https://nbsdc.cn/general/news/newsNoticeView?id=62d780c499f1de0a458382c0" target="_blank">-->
+	<!--			<img id="floatImg" alt="图片无法加载" src="https://nbsdc.cn/dataImage/image/news/peixunxinwen.jpg">-->
+	<!--		</a>-->
+	<img id="floatImg" alt="图片无法加载" src="https://www.nbsdc.cn/dataImage/image/newQualityProductiveForce/新质生产力数据资源2.png" onclick="jumpToNQPF()" style="cursor: pointer;">
+	<div style="position:absolute;top:0px;left:232px">
+		<img id="closeImg" alt="图片无法加载" src="https://nbsdc.cn/dataImage/image/news/关闭按钮.png" onclick="closeImg()">
+	</div>
+</div>
+<script type="text/javascript" src="/basic/jquery.waypoints.min.js"></script>
+<script type="text/javascript" src="/basic/jquery.countup.min.js"></script>
+<script type="text/javascript">
+	var moveX = 0; //X轴方向上移动的距离
+	var moveY = 80; //Y轴方向上移动的距离
+	var stepX = 1; //图片X轴移动的速度
+	var stepY = 1; //图片Y轴移动的速度
+	var directionX = 0; //设置图片在X轴方向上的移动方向   0:向右  1:向左
+	var directionY = 0; //设置图片在Y轴方向上的移动方向   0:向下  1:向上
+	function closeImg(){
+		var img = document.getElementById("float"); //获得图片所在层的ID
+		img.style.display="none";
+	}
+
+	function changePos() {
+		timer = setInterval(function() {
+			var img = document.getElementById("float"); //获得图片所在层的ID
+			var height = document.documentElement.clientHeight; //浏览器的高度
+			var width = document.documentElement.clientWidth; //浏览器的宽度
+			var imgHeight = document.getElementById("floatImg").height; //飘浮图片的高度
+			var imgWidth = document.getElementById("floatImg").width; //瓢浮图片的宽度
+			//设置飘浮图片距离浏览器左侧位置
+			img.style.left = parseInt(moveX + document.documentElement.scrollLeft) + "px";
+			//设置飘浮图片距离浏览器右侧位置
+			img.style.top = parseInt(moveY + document.documentElement.scrollTop) + "px";
+
+			//设置图片在Y轴上的移动规律
+			if(directionY == 0) {
+				//飘浮图片在Y轴方向上向下移动
+				moveY += stepY;
+			} else {
+				//飘浮图片在Y轴方向上向上移动
+				moveY -= stepY;
+			}
+			if(moveY < 80) {
+				//如果飘浮图片飘浮到顶端的时候，设置图片在Y轴方向上向下移动
+				directionY = 0;
+				moveY = 80;
+			}
+			if(moveY > (height - imgHeight)) {
+				//如果飘浮图片飘浮到浏览器底端的时候，设置图片在Y轴方向上向上移动
+				directionY = 1;
+				moveY = (height - imgHeight);
+			}
+
+			//设置图片在X轴上的移动规律
+			if(directionX == 0) {
+				moveX += stepX;
+			} else {
+				moveX -= stepX;
+			}
+			if(moveX < 0) {
+				//如果飘浮图片飘浮到浏览器左侧的时候，设置图片在X轴方向上向右移动
+				directionX = 0;
+				moveX = 0;
+			}
+			if(moveX > (width - imgWidth)) {
+				//如果飘浮图片飘浮到浏览器右侧的时候，设置图片在X轴方向上向左移动
+				directionX = 1;
+				moveX = (width - imgWidth);
+			}
+		}, 30)
+
+	}
+	changePos();
+
+	function clearPos1() {
+		clearInterval(timer);
+	}
+
+	function jumpToNQPF(){
+		window.location.href = "https://nbsdc.cn/general/newQualityProductiveForce";
+		// window.location.href = "http://localhost:8088/general/newQualityProductiveForce";
+		// window.location.href = "http://10.0.85.111:8088/general/newQualityProductiveForce";
+	}
+	function initHighQuality(){
+		$.ajax({
+			type: "GET",
+			url: "/api/general/initHighQuality",
+			contentType: "application/json",
+			dataType: "json",
+			cache: false,
+			async: false,
+			success: function (data) {
+				if(data.code === 200){
+					const dataList = data.list || [];
+					const container = $('#buildDataMod2');
+					container.empty();
+
+					const groupSize = 10;
+					for (let i = 0; i < dataList.length; i += groupSize) {
+						const slide = $('<div class="swiper-slide"></div>');
+						slide.attr('data-swiper-slide-index', Math.floor(i / groupSize));
+
+						const group = dataList.slice(i, i + groupSize);
+						group.forEach(item => {
+							let defaultImg = item.img;
+
+							if (defaultImg.includes("idb.nbsdc.cn")) {
+								if (defaultImg.startsWith("https://")) {
+									defaultImg = defaultImg.replace("https://idb.nbsdc.cn/api/datasetLogo/", "https://nbsdc.cn/api/datasetLogo/");
+								} else if (defaultImg.startsWith("http://")) {
+									defaultImg = defaultImg.replace("http://idb.nbsdc.cn/api/datasetLogo/", "https://nbsdc.cn/api/datasetLogo/");
+								}
+							}
+							// 判定是否为无效图片
+							if (!defaultImg || defaultImg === "" ||
+									defaultImg === "/other/image/default.jpg" ||
+									defaultImg === "/dataImage/image/cover/null") {
+								defaultImg = "/dataImage/image/cover/404.png";
+							}
+
+							const href = `/general/dataDetail?id=${item.id}&type=1`;
+							let itemHtml = `<div class="item"><a href="${href}" class="item_m" title="${item.title}">`;
+
+							if (defaultImg.indexOf("/dataImage/image/cover/404.png") !== -1) {
+								let titleText = item.title || "";
+								if (titleText.length > 21) {
+									titleText = titleText.slice(0, 21) ;
+								}
+								// 使用默认卡片图样式
+								itemHtml += `
+							  <div class="img" style="object-fit: cover;position: relative; overflow: hidden;">
+								<img style="width: 100%; height: 100%; object-fit: cover;" src="/dataImage/image/card/信息科技3.png" alt="">
+								<div style="
+								  height: 76px;
+								  position: absolute;
+								  top: 60%;
+								  left: 50%;
+								  transform: translate(-50%, -50%);
+								  width: 100%;
+								  padding: 5px 5px;
+								  box-sizing: border-box;
+								  color: #ffddad;
+								  font-size: 14px;
+								  font-weight: bold;
+								  text-align: center;
+								  line-height: 1.4;
+								  font-family: '宋体';
+								  overflow: hidden;
+								">
+								  ${titleText}
+								</div>
+							  </div>
+							  <div class="t">${item.title}</div>
+							`;
+
+
+							} else {
+								// 使用正常图片
+								itemHtml += `
+								<div class="img"><img style="object-fit: cover;" src="${defaultImg}" alt="${item.title}"></div>
+								<div class="t">${item.title}</div>
+							`;
+							}
+
+							itemHtml += `</a></div>`; // 关闭标签
+							slide.append(itemHtml);
+						});
+
+						container.append(slide);
+					}
+
+					// 重建 swiper
+					if (typeof Swiper !== 'undefined') {
+						new Swiper('#highQualitySwiper', {
+							pagination: {
+								// el: '.swiper-pagination',
+								el: '.ilist1 .swiper-pagination',
+								clickable: true,
+								clickable: true
+							},
+							loop: true,
+							speed: 1500,
+							autoplay: {
+								delay: 3000,
+								disableOnInteraction: false,
+							},
+							// loop: false
+						});
+
+					}
+				}
+			},
+			error:function (XMLHttpRequest, textStatus) {
+				console.log("异常错误");
+			}
+		});
+	}
+
+
+	$(function() {
+		type = "0"
+		initHighQuality();
+		hotData();
+		newsList();
+		lunboAboutNew();
+		$("#searchBtn").click(function () {
+			searchKeyWord();
+		});
+		$("#searchKey").on("keypress",function () {
+			if (event.keyCode == 13) {
+				$("#searchBtn").trigger('click');
+			}
+		});
+	});
+	$('.counter').countUp({ delay: 100,time: 1500 });
+	new Swiper('.inote', {
+		loop: true,
+		speed: 1500,
+		direction: 'vertical',
+		autoplay: {
+			delay: 3000,
+			disableOnInteraction: false,
+		}
+	});
+
+	var mySwiper2 = new Swiper('.ilist1', {
+		loop: true,
+		speed: 1500,
+		autoplay: {
+			delay: 3000,
+			disableOnInteraction: false,
+		},
+		pagination: {
+			el: '.ilist1 .swiper-pagination',
+			clickable: true,
+		}
+	});
+	mySwiper2.el.onmouseover = function(){
+		mySwiper2.autoplay.stop();
+	};
+	mySwiper2.el.onmouseout = function(){
+		mySwiper2.autoplay.start();
+	};
+	function pageIndexDataBaseInfo(id) {
+		window.open("/general/indexDataBaseInfo/"+id);
+	}
+
+	function moreBtn() {
+		$(".ilist11").find("ul li[name='dhli']").toggle();
+		let mbcipt = $("#moreBtnCvIpt").val();
+		if(mbcipt === "-1"){
+			$("#moreBtnCvIpt").val("1");
+			$("#moreBtn").text("收起");
+		}
+		else{
+			$("#moreBtnCvIpt").val("-1");
+			$("#moreBtn").text("更多");
+		}
+	}
+
+	var type = "0";
+	function qdType(qtype) {
+		type = qtype;
+		if (type == "9"){
+			$("#searchKey").prop("placeholder","Search data on findata") ;
+		}else {
+			$("#searchKey").prop("placeholder","可搜索数据集、数据应用、数据分析工具、作者、项目名称、CSTR、DOI") ;
+		}
+	}
+
+	function searchKeyWord() {
+		let key = $("#searchKey").val();
+		if (type == "9"){
+			if (key === ""|| typeof(key) == "undefined" || key === " "){
+				window.open("https://findata.cn/?source=NBSDC");
+			}else {
+				window.open("https://findata.cn/search?source=NBSDC&search=" + key);
+			}
+		}else {
+			if(key.indexOf("CSTR:") !== -1 || key.indexOf("cstr:") !== -1){
+				window.open("https://cstr.cn/" + key.trim());
+			} else{
+				if(type === "0"){
+					window.location.href = '/general/dataSetHome?searchKey='+key;
+				}else{
+					window.location.href = '/general/dataSetHome?searchKey='+key+'&tpe='+type;
+				}
+			}
+		}
+
+
+	}
+
+	function hotData() {
+		$.ajax({
+			type: "GET",
+			url: "/api/general/v1/getDataLists",
+			contentType: 'application/json',
+			dataType: "json",
+			async: false,
+			success: function (data) {
+				let list = data.list.list;
+				$.each(list, function (index, item) {
+					// 数据组装
+					$("#getDataLists").append('<li><a target="_blank" href="/general/dataDetail?id='+item.id+'&type='+item.dataTypeId+'" title="'+item.name+'">'+item.name+'</a><span class="hot">'+item.viewingCount+'</span></li>');
+				});
+			},
+			error: function () {
+
+			}
+		});
+	}
+
+	function removeDiv(){
+		let obj = document.getElementById("tipsId");
+		obj.parentNode.removeChild(obj);
+	}
+
+
+	function newsList() {
+		let params = {
+			"pageNum": 1,
+			"pageSize": 3,
+			"sortName": "updateTime",
+		};
+		$.ajax({
+			type: "POST",
+			url: "/api/general/news/selectNewsNoticePages",
+			data: JSON.stringify(params),
+			contentType: "application/json",
+			dataType: "json",
+			cache: false,
+			async: false,
+			success: function (data) {
+				let result = data.result.list;
+				if (result.length > 0) {
+					$.each(result,function (index,item) {
+						// 数据组装
+						let href = "/general/news/newsNoticeView?id="+item.id;
+						$("#getNewsLists").append(
+								'   <li><a target="_blank" href="'+href+'" title="'+item.title+'">'+item.title+'</a><span class="time">'+item.updateTime.substr(0,10)+'</span></li>');
+					});
+				}
+			},
+			error: function (XMLHttpRequest, textStatus) {
+				alert(XMLHttpRequest.responseJSON.message);
+			}
+		});
+	}
+	function lunboAboutNew() {
+		$.ajax({
+			type: "GET",
+			url: "/api/general/selectNewsBanner",
+			contentType:"application/json",
+			dataType: "json",
+			cache: false,
+			async : false,
+			success: function (data) {
+				let result = data.result;
+				if(result.length > 0){
+					setValue(result);
+				}
+			},
+			error:function (XMLHttpRequest, textStatus) {
+				console.log("异常错误");
+			}
+		});
+
+		function setValue(result) {
+			let contentHtml = '';
+			$.each(result,function (index,item) {
+				contentHtml += '<div class="swiper-slide">';
+				contentHtml += '    <a href="/general/news/newsNoticeView?id='+item.id+'" target="_blank">'+item.title+'</a>';
+				contentHtml += '</div>'
+			});
+			$("#bannerNews").append(contentHtml);
+
+			new Swiper('.inote', {
+				loop: true,
+				speed: 1500,
+				direction: 'vertical',
+				autoplay: {
+					delay: 3000,
+					disableOnInteraction: false,
+				}
+			})
+		}
+	}
+</script>
+</body>
+</html>
