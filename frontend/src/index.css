@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+  background-color: #0f172a;
+  /* Custom dark slate background */
+  color: #f8fafc;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+}
