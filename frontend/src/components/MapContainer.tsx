@@ -186,7 +186,7 @@ export default function MapContainer({ onRightPanelToggle }: { onRightPanelToggl
             wireframe: true,
             getLineWidth: 2,
             getPosition: (d: any) => d.geometry.coordinates,
-            getFillColor: [255, 60, 60, 35], // 恢复较浅的透明度，避免过于刺眼
+            getFillColor: [255, 60, 60, 25], // 退回更浅的透明度25，保留多边形
             getLineColor: [255, 80, 80, 200],
             getElevation: 400, // 高度 400，确保绝对超过无人机航线
         }),
@@ -234,11 +234,11 @@ export default function MapContainer({ onRightPanelToggle }: { onRightPanelToggl
             getColor: (d: any) => {
                 if (d.trajectory && energyData && energyData[d.trajectory.id]) {
                     const payload = energyData[d.trajectory.id].payload;
-                    if (payload >= 0.75) return [236, 72, 153];
-                    if (payload >= 0.5) return [168, 85, 247];
-                    return [14, 165, 233];
+                    if (payload >= 2.0) return [245, 158, 11];  // 琥珀色/黄 (对比度强)
+                    if (payload >= 1.0) return [16, 185, 129];  // 翠绿色 (对比度强)
+                    return [14, 165, 233]; // 青蓝色
                 }
-                return [14, 165, 233];
+                return [14, 165, 233]; // 默认青蓝色
             },
             widthMinPixels: 2.5,
             trailLength: 100,
