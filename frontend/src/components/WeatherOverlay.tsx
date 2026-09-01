@@ -1,7 +1,6 @@
 import { useEffect, useRef, memo } from 'react';
 import { useEnvironment } from '../contexts/EnvironmentContext';
 
-// 【竞赛加分 BONUS-2】React.memo 包裹，仅受 weather 影响
 const WeatherOverlay = memo(function WeatherOverlay() {
     const { weather, windSpeed } = useEnvironment();
     const canvasRef = useRef<HTMLCanvasElement>(null);

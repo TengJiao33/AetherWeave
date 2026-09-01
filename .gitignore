@@ -10,6 +10,10 @@ data/processed/trajectories/*
 !frontend/public/data/processed/trajectories/shenzhen_uav_trajectories.json
 __pycache__/
 
+# Local preview process state
+/frontend-preview.job
+/frontend-preview.pid
+
 # Flask SQLite database
 instance/
 *.db

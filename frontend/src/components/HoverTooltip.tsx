@@ -5,7 +5,6 @@ interface HoverInfoProps {
     hoverInfo: any;
 }
 
-// 【竞赛加分 BONUS-2】React.memo 包裹纯展示组件，避免父组件重渲染时的不必要重建
 const HoverTooltip = memo(function HoverTooltip({ hoverInfo }: HoverInfoProps) {
     if (!hoverInfo || !hoverInfo.object || !hoverInfo.object.properties) return null;
 

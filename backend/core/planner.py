@@ -34,7 +34,7 @@ class TrajectoryResult:
     duration_s: float
     algo: str = "astar_v4"
     nfz_violations: int = 0
-    nodes_expanded: int = 0  # 【竞赛加分 BONUS-5】A* 搜索扩展的节点数，答辩时可展示算法执行统计
+    nodes_expanded: int = 0
     explored_nodes: list[list] = None  # A* 搜索过程中的扩展网格点序列 [lon, lat][]
 
 def _lerp(a: float, b: float, t: float) -> float:
